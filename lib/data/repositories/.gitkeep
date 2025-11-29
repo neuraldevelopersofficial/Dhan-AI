@@ -1,0 +1,4 @@
+# Repository implementations will go here
+# This directory will contain repository classes that implement the interface between
+# the app and the backend API (when integrated)
+

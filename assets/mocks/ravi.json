@@ -1,0 +1,73 @@
+{
+  "user": {
+    "id": "ravi_001",
+    "name": "Ravi Kumar",
+    "occupation": "Delivery",
+    "language": "en",
+    "phone": "+91XXXXXXXXXX"
+  },
+  "stability": {
+    "score": 72,
+    "safeDays": 3,
+    "trend": "stable"
+  },
+  "forecast": {
+    "next7Days": [450, 380, 300, 460, 510, 400, 360],
+    "predictedEndBalance": 360
+  },
+  "transactions": [
+    {
+      "id": "t1",
+      "type": "expense",
+      "amount": 150.0,
+      "category": "Food",
+      "date": "2024-01-15T10:30:00Z",
+      "note": "Lunch"
+    },
+    {
+      "id": "t2",
+      "type": "income",
+      "amount": 500.0,
+      "category": "Delivery",
+      "date": "2024-01-15T08:00:00Z",
+      "note": "Morning deliveries"
+    },
+    {
+      "id": "t3",
+      "type": "expense",
+      "amount": 200.0,
+      "category": "Fuel",
+      "date": "2024-01-14T18:00:00Z",
+      "note": "Petrol"
+    },
+    {
+      "id": "t4",
+      "type": "income",
+      "amount": 600.0,
+      "category": "Delivery",
+      "date": "2024-01-14T12:00:00Z",
+      "note": "Afternoon shift"
+    }
+  ],
+  "goals": [
+    {
+      "id": "g1",
+      "title": "Emergency Fund",
+      "target": 5000.0,
+      "current": 1200.0,
+      "progress": 0.24,
+      "type": "vault"
+    }
+  ],
+  "nudges": [
+    {
+      "id": "n1",
+      "title": "Move ₹50 to Emergency Vault",
+      "reason": "You have ₹50 extra today",
+      "impact": "Helps build emergency fund faster",
+      "riskLevel": "low",
+      "type": "vault_deposit"
+    }
+  ]
+}
+

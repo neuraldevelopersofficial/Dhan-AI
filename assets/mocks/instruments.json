@@ -1,0 +1,58 @@
+{
+  "instruments": [
+    {
+      "id": "i1",
+      "name": "HDFC ETF",
+      "type": "ETF",
+      "price": 134.2,
+      "change": 0.8,
+      "changePercent": 0.6,
+      "sparkline": [132.5, 133.0, 133.5, 134.0, 134.2, 134.1, 134.2]
+    },
+    {
+      "id": "i2",
+      "name": "Nifty 50 Index Fund",
+      "type": "Index Fund",
+      "price": 21580.5,
+      "change": -45.2,
+      "changePercent": -0.21,
+      "sparkline": [21600, 21620, 21610, 21600, 21590, 21585, 21580.5]
+    },
+    {
+      "id": "i3",
+      "name": "Low-Risk Debt Fund",
+      "type": "Debt",
+      "price": 105.8,
+      "change": 0.3,
+      "changePercent": 0.28,
+      "sparkline": [105.5, 105.6, 105.7, 105.75, 105.8, 105.78, 105.8]
+    }
+  ],
+  "portfolio": {
+    "invested": 1200.0,
+    "current": 1260.0,
+    "gain": 60.0,
+    "gainPercent": 5.0,
+    "holdings": [
+      {
+        "instrumentId": "i1",
+        "units": 5.0,
+        "invested": 600.0,
+        "current": 671.0
+      },
+      {
+        "instrumentId": "i2",
+        "units": 0.02,
+        "invested": 400.0,
+        "current": 431.6
+      },
+      {
+        "instrumentId": "i3",
+        "units": 2.0,
+        "invested": 200.0,
+        "current": 211.6
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,65 @@
+{
+  "user": {
+    "id": "arjun_001",
+    "name": "Arjun Patel",
+    "occupation": "Student",
+    "language": "en",
+    "phone": "+91XXXXXXXXXX"
+  },
+  "stability": {
+    "score": 65,
+    "safeDays": 4,
+    "trend": "improving"
+  },
+  "forecast": {
+    "next7Days": [400, 420, 380, 450, 480, 440, 400],
+    "predictedEndBalance": 400
+  },
+  "transactions": [
+    {
+      "id": "t1",
+      "type": "expense",
+      "amount": 50.0,
+      "category": "Food",
+      "date": "2024-01-15T13:00:00Z",
+      "note": "Canteen"
+    },
+    {
+      "id": "t2",
+      "type": "income",
+      "amount": 300.0,
+      "category": "Other",
+      "date": "2024-01-15T10:00:00Z",
+      "note": "Part-time work"
+    },
+    {
+      "id": "t3",
+      "type": "expense",
+      "amount": 100.0,
+      "category": "Other",
+      "date": "2024-01-14T15:00:00Z",
+      "note": "Books"
+    }
+  ],
+  "goals": [
+    {
+      "id": "g1",
+      "title": "Emergency Fund",
+      "target": 3000.0,
+      "current": 750.0,
+      "progress": 0.25,
+      "type": "vault"
+    }
+  ],
+  "nudges": [
+    {
+      "id": "n1",
+      "title": "Save ₹20 today",
+      "reason": "Small daily savings add up",
+      "impact": "Builds habit of saving",
+      "riskLevel": "low",
+      "type": "micro_savings"
+    }
+  ]
+}
+

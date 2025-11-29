@@ -1,0 +1,65 @@
+{
+  "user": {
+    "id": "meena_001",
+    "name": "Meena Sharma",
+    "occupation": "Vendor",
+    "language": "hi",
+    "phone": "+91XXXXXXXXXX"
+  },
+  "stability": {
+    "score": 58,
+    "safeDays": 2,
+    "trend": "declining"
+  },
+  "forecast": {
+    "next7Days": [320, 280, 200, 380, 350, 300, 250],
+    "predictedEndBalance": 250
+  },
+  "transactions": [
+    {
+      "id": "t1",
+      "type": "expense",
+      "amount": 100.0,
+      "category": "Food",
+      "date": "2024-01-15T09:00:00Z",
+      "note": "Breakfast"
+    },
+    {
+      "id": "t2",
+      "type": "income",
+      "amount": 450.0,
+      "category": "Vendor",
+      "date": "2024-01-15T07:00:00Z",
+      "note": "Morning sales"
+    },
+    {
+      "id": "t3",
+      "type": "expense",
+      "amount": 80.0,
+      "category": "Rent",
+      "date": "2024-01-14T10:00:00Z",
+      "note": "Daily rent"
+    }
+  ],
+  "goals": [
+    {
+      "id": "g1",
+      "title": "Phone Upgrade",
+      "target": 8000.0,
+      "current": 2000.0,
+      "progress": 0.25,
+      "type": "vault"
+    }
+  ],
+  "nudges": [
+    {
+      "id": "n1",
+      "title": "Reduce daily spend by ₹30",
+      "reason": "Possible shortfall in 3 days",
+      "impact": "Avoids ₹250 shortfall",
+      "riskLevel": "high",
+      "type": "spend_reduction"
+    }
+  ]
+}
+

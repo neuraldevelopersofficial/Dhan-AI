@@ -1,0 +1,8 @@
+# Riverpod providers will go here
+# Example structure:
+# - dashboard_provider.dart
+# - transaction_provider.dart
+# - goal_provider.dart
+# - nudge_provider.dart
+# etc.
+
