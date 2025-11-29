@@ -1,23 +1,36 @@
 # Dhan-AI - Personal Financial Co-pilot
 
-A Flutter mobile app for users with irregular incomes, providing financial forecasting, nudges, and savings management.
+Dhan-AI is an intelligent financial co-pilot designed for gig workers, freelancers, and low-salaried individuals in India who face irregular or unpredictable income streams. Millions of people working in delivery, ride-hailing, and contract-based jobs struggle with conventional financial tools that assume steady salaries.
+Dhan-AI continuously learns from a user’s real-time income patterns, spending habits, and upcoming financial obligations. It uses this data to forecast cash-flow gaps and deliver personalized, proactive financial guidance.
+By turning uncertain earnings into structured, goal-driven financial journeys, Dhan-AI empowers individuals to avoid cash crunches, plan for emergencies, and build long-term financial resilience — all through intuitive, human-like AI interactions.
 
-## Project Status
+## Core Features
 
-This is a frontend prototype with mock data and stubbed APIs. The app demonstrates the full user experience with local mock data that simulates backend responses.
+Onboarding & Personalization – quick setup, goals, language, persona
 
-## Features
+Income & Expense Tracking – manual + AI-categorized transactions
 
-- ✅ **Splash & Onboarding** - 3-step carousel onboarding flow
-- ✅ **Home Dashboard** - Stability score, quick actions, recent transactions
-- 🚧 **Add Transaction** - Manual income/expense entry (in progress)
-- 🚧 **Nudges & Recommendations** - Actionable financial insights (in progress)
-- 🚧 **Goals & Vaults** - Savings goals and progress tracking (in progress)
-- 🚧 **Investment Coach** - Premium investment recommendations (in progress)
-- 🚧 **AI Copilot Chat** - Conversational financial assistant (in progress)
-- 🚧 **Notifications** - Alert history and management (in progress)
-- 🚧 **Profile & Settings** - User preferences and subscription (in progress)
-- 🚧 **Rewards & Gamification** - Streaks and badges (in progress)
+Dashboard – wallet balance, financial stability score, spending limits, charts
+
+AI Copilot / Chat – personalized advice, proactive nudges, “what-if” simulations, voice option
+
+Smart Nudges & Alerts – shortfall warnings, bill reminders, goal progress
+
+Goals & Micro-Savings – emergency fund, purchase goals, Safety Vault
+
+Investment Coach (Premium) – simulated investments, real stock tracking, risk & growth visualization
+
+Rewards & Gamification – streaks, badges, points for good financial habits
+
+Settings & Security – profile, notifications, backup, data privacy
+
+Tech & Monetization
+
+Tech: Flutter + Firebase Realtime DB + LLM API + FCM notifications
+
+Free Tier: Dashboard + basic nudges + goal tracking
+
+Premium Tier: AI voice coach, advanced forecasts, investment coach, priority support
 
 ## Project Structure
 
@@ -57,63 +70,6 @@ lib/
    flutter run
    ```
 
-### Mock Data
-
-The app uses local JSON files in `assets/mocks/`:
-- `ravi.json` - Delivery driver persona
-- `meena.json` - Vendor persona
-- `arjun.json` - Student persona
-- `instruments.json` - Investment instruments data
-
-To switch personas, modify `MockApi.currentPersona` in `lib/data/mock/mock_api.dart`.
-
-### Feature Flag
-
-Toggle between mock and real backend:
-```dart
-// In lib/data/mock/mock_api.dart
-static const bool useRealBackend = false; // Set to true when backend is ready
-```
-
-## Design System
-
-- **Primary Color**: #0B6FFF (Dhan Blue)
-- **Typography**: Inter font family
-- **Spacing**: 4px base unit (xs, sm, md, lg, xl, xxl)
-- **Radius**: 8px (small), 12px (medium), 16px (large)
-
-## State Management
-
-Using **Riverpod** for state management. Providers will be added in `lib/presentation/providers/` as features are built.
-
-## Navigation
-
-Using **go_router** for declarative navigation. Routes are defined in `lib/core/router/app_router.dart`.
-
-## Adding New Screens
-
-1. Create screen widget in `lib/presentation/screens/`
-2. Add route in `lib/core/router/app_router.dart`
-3. Create provider (if needed) in `lib/presentation/providers/`
-4. Update navigation calls throughout the app
-
-## Next Steps
-
-1. Implement remaining screens (see Features list above)
-2. Connect Riverpod providers for state management
-3. Add more mock data scenarios
-4. Implement analytics events (currently console logging)
-5. Add widget tests and integration tests
-6. Prepare API contracts for backend team
-
-## Backend Integration
-
-When ready to connect to real backend:
-1. Set `useRealBackend = true` in `MockApi`
-2. Create repository implementations in `lib/data/repositories/`
-3. Update providers to use repositories instead of MockApi
-4. Add authentication handling
-5. Update API contracts (see `assets/mocks/` for expected JSON structure)
 
 ## License
 
